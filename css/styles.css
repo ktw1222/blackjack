@@ -1,0 +1,156 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #A3C2C2;
+  text-align: center;
+}
+
+.header {
+  width: 80%;
+  height: 200px;
+  display: inline-block;
+  background-color: #CCFFCC;
+  border: 4px solid #665544;
+  border-radius: 30px;
+}
+
+.title {
+  font-size: 40px;
+  font-family: Arial, Verdana, sans-serif;
+  letter-spacing: 0.2em;
+  font-weight: bold;
+  text-align: center;
+  color: #00004C;
+  padding: 5px;
+}
+
+.nav {
+  display: inline;
+  background-color: #66FFFF;
+  font-size: 30px;
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 15px;
+  margin: 100px;
+  width: 570px;
+  height: 80px;
+  border: 4px solid #665544;
+  text-align: center;
+  border-radius: 30px;
+}
+
+p#goTop {
+  font-size: 30px;
+}
+
+
+
+div.yes {
+  font-size: 40px;
+  color: #0066FF;
+}
+div.no {
+  font-size: 40px;
+  color: #FF0000;
+}
+#ageAsk {
+  font-size: 2em;
+  font-style: italic;
+
+}
+a {
+  text-decoration: none;
+  padding: 15px;
+  margin: 10px;
+}
+
+img {
+  width:80%;
+  height: 400px;
+  padding: 10px;
+}
+
+img#dealer {
+  width:50%;
+  height: 400px;
+  padding: 5px;
+}
+
+img#blank {
+  height:100px;
+  width:100px;
+}
+
+div#gameResult {
+  height: 500px;
+  width:500px;
+  text-align: center;
+
+}
+div.rule, div.game {
+  font-size: 4em;
+  font-weight: bold;
+}
+
+
+p#game_greeting {
+  font-size:45px;
+  font-family: Arial, Verdana, sans-serif;
+}
+
+table#playTable {
+  text-align: center;
+  width:80%;
+  height:400px;
+  padding: 10px;
+  margin-left: 6em;
+}
+
+td#dealerTable, td#playerTable {
+  background-color: #006600;
+  font-size: 3em;
+  height: 1em;
+
+}
+
+tr.dCard, tr.pCard {
+  background-color: #33CC33;
+  height: 8em;
+}
+
+td#dealerSum, td#playerSum {
+  background-color: #CCCC00;
+
+}
+
+td#result, td#betting {
+  font-size: 30px;
+  font-weight: bold;
+}
+
+table, tr, td {
+  border: 1px solid black;
+  padding:10px;
+}
+
+
+
+button {
+    background: #FF9966;
+    color: #000099;
+    font-family: sans-serif;
+    font-size: 35px;
+    text-align: center;
+    border: 1px solid black;
+    margin: 5px;
+    padding: 10px 10px;
+    border-radius: 10px;
+    box-shadow: 2px 2px black;
+}
+
+.control {
+  display: block;
+  margin: 5px;
+  text-align: center;
+}
