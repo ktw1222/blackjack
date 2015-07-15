@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Welcome to TK Blackjack</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="https://code.jquery.com/jquery-2.1.4.js"></script>
+    <script src="js/blackjack.js"></script>
+  </head>
+
+  <body>
+    <div class="header">
+        <div class="title">
+          <h1 id="top"> TK's Blackjack </h1>
+        </div>
+    </div>
+
+    <div class="nav">
+        <a id="goHome" href="index.html">HOME</a>
+        <a id="goRule" href="rule.html">RULE</a>
+        <a id="goGame" href="game.html">GAME</a>
+    </div>
+
+
+    <div>
+      <h1 class="rule">*RULE*</h1>
+      <p id="rule_1"> Blackjack is one of the most popular card game!!  Rule may be varied by type of conditions that you are exposed to.</p>
+      <p id="rule_2"> But, the basic common rule is simple, and you can easily follow it and enjoy the game.</P>
+    </div>
+
+      <div>
+        <h2 class="object"> Object </h2>
+          <p id="object"> The object of the game is to beat the dealer, which can be done in a number of ways:
+            <ul id="object_1">
+              <li>Get 21 points on the player's first two cards (called a blackjack), without a dealer blackjack</li>
+              <li>Reach a final score higher than the dealer without exceeding 21</li>
+              <li>Let the dealer draw additional cards until his or her hand exceeds 21</li>
+            </ul>
+      </div>
+
+      <div class="steps">
+        <h2> Steps </h2>
+          <p id="steps"> The following are the choices available to the player: </p>
+
+          <table id="choices">
+            <tr>
+              <td>Stand</td>
+              <td>Player holds the total and end turn</td>
+            </tr>
+            <tr>
+              <td>Hit</td>
+              <td>Player draws another card (and more if he wishes)</td>
+            </tr>
+            <tr>
+              <td>Surrender</td>
+              <td>The player forfeits half his wager, keeping the other half, and does not play out his hand. This option is only available on the initial two cards, and depending on casino rules, sometimes it is not allowed at all </td>
+            </tr>
+            <tr>
+              <td>Split</td>
+              <td>If the player has a pair, or any two 10-point cards, then he may double his bet and separate his cards into two individual hands. The dealer will automatically give each card a second card. Then, the player may hit, stand, or double normally. However, when splitting aces, each ace gets only one card. Sometimes doubling after splitting is not allowed. If the player gets a ten and ace after splitting, then it counts as 21 points, not a blackjack. Usually the player may keep re-splitting up to a total of four hands. Sometimes re-splitting aces is not allowed</td>
+            </tr>
+            <tr>
+              <td>Double</td>
+              <td>Player doubles his bet and gets one, and only one, more card.</td>
+            </tr>
+          </table>
+        </div>
+
+        <div class="generalRule"><ul>
+            <li>The cards 2 through 10 have their face value, J, Q, and K are worth 10 points each, and the Ace is worth either 1 or 11 points (player's choice). </li>
+            <li>A player starts with betting and receive two cards, one of the dealer's cards is hidden until the end.</li>
+            <li>Choose 'hit','stand' or 'surrender'. If hitting card causes the player's total points to exceed 21 (known as "breaking" or "busting") then the dealer wins regardless of the dealer's hand.</li>
+            <li>If the player are dealt 21 from the start (Ace and 10), he got a blackjack and wins the game. Blackjack usually means you win 1.5 the amount of your bet.</li>
+            <li>Dealer will hit until his/her cards total 17 or higher.</li>
+            <li>Doubling is like a hit, only the bet is doubled and you only get one more card.</li>
+            <li>Split can be done when you have two of the same card - the pair is split into two hands. Splitting also doubles the bet, because each new hand is worth the original bet.</li>
+            <li>You can only double/split on the first move, or first move of a hand created by a split.
+          </ul>
+        </div>
+
+        <p id="goTop"><a href="#top"> Top of the page </a></p>
+</body>
+
+</html>

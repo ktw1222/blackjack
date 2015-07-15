@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Welcome to TK Blackjack</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="https://code.jquery.com/jquery-2.1.4.js"></script>
+    <script src="js/blackjack.js"></script>
+  </head>
+
+  <body>
+    <div class="header">
+        <div class="title">
+          <h1 id="top"> TK's Blackjack </h1>
+        </div>
+    </div>
+
+    <div class="nav">
+        <a id="goHome" href="index.html">HOME</a>
+        <!-- <a id="goRule" href="rule.html">RULE</a> -->
+        <a id="goGame" href="game.html">GAME</a>
+    </div>
+
+
+
+    <h1 class="game">*GAME*</h1>
+      <p id="game_greeting"> "Hi! Let's play Blackjack"</p>
+      <!-- <img src="pix/dealer.png" alt="dealer" id="dealer"> -->
+
+        <table id="playTable">
+            <tr>
+              <td id="dealerTable" colspan="5">Dealer</td>
+              <td id="dealerSum"><input type="text" id="dealerTotal" value="0"></td>
+            </tr>
+            <tr class="dCard">
+              <td id="dCard1"><img id=blank src="pix/cards/cardback.png"></td>
+              <td id="dCard2"><img id=blank src="pix/cards/cardback.png"></td>
+              <td id="dCard3"><img id=blank src="pix/cards/cardback.png"></td>
+              <td id="dCard4"><img id=blank src="pix/cards/cardback.png"></td>
+              <td id="dCard5"><img id=blank src="pix/cards/cardback.png"></td>
+            </tr>
+
+            <tr class="pCard">
+              <td id="pCard1"><img id=blank src="pix/cards/cardback.png"></td>
+              <td id="pCard2"><img id=blank src="pix/cards/cardback.png"></td>
+              <td id="pCard3"><img id=blank src="pix/cards/cardback.png"></td>
+              <td id="pCard4"><img id=blank src="pix/cards/cardback.png"></td>
+              <td id="pCard5"><img id=blank src="pix/cards/cardback.png"></td>
+            </tr>
+
+            <tr>
+              <td id="playerTable" colspan="5">Player</td>
+              <td id="playerSum"><input type="text" id="playerTotal" value="0"></td>
+            </tr>
+
+        </table>
+
+          <div class=result>Game Result: <input type=text id=gameResult value></div>
+          <div class="control">
+            <button id="start">Deal Me</button>
+            <button id="hit">Hit</button>
+            <button id="stand">Stand</button>
+            <button id="reset">Reset</button>
+          </div>
+
+
+
+
+          <p id="goTop"><a href="#top"> Top of the page </a></p>
+</body>
+
+</html>
