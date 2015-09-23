@@ -1,0 +1,196 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #A3C2C2;
+  text-align: center;
+}
+
+.header {
+  width: 80%;
+  height: 200px;
+  display: inline-block;
+  background-color: #CCFFCC;
+  border: 4px solid #665544;
+  border-radius: 30px;
+}
+
+.title {
+  font-size: 40px;
+  font-family: Arial, Verdana, sans-serif;
+  letter-spacing: 0.2em;
+  font-weight: bold;
+  text-align: center;
+  color: #00004C;
+  padding: 5px;
+}
+
+.nav {
+  display: inline;
+  background-color: #66FFFF;
+  font-size: 30px;
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 15px;
+  margin: 100px;
+  width: 570px;
+  height: 80px;
+  border: 4px solid #665544;
+  text-align: center;
+  border-radius: 30px;
+}
+
+p#goTop {
+  font-size: 30px;
+}
+
+
+
+div.yes {
+  font-size: 40px;
+  color: #0066FF;
+}
+div.no {
+  font-size: 40px;
+  color: #FF0000;
+}
+#ageAsk {
+  font-size: 2em;
+  font-style: italic;
+
+}
+a {
+  text-decoration: none;
+  padding: 15px;
+  margin: 10px;
+}
+
+img {
+  width:80%;
+  height: 400px;
+  padding: 10px;
+}
+
+img#dealer {
+  width:50%;
+  height: 400px;
+  padding: 5px;
+}
+
+img#blank {
+  height:100px;
+  width:100px;
+}
+
+div.rule, div.game {
+  font-size: 4em;
+  font-weight: bold;
+}
+
+p#game_greeting {
+  font-size:45px;
+  font-family: Arial, Verdana, sans-serif;
+}
+
+button {
+    background: #FF9966;
+    color: #000099;
+    font-family: sans-serif;
+    font-size: 15px;
+    text-align: center;
+    border: 1px solid black;
+    margin: 5px;
+    padding: 10px 10px;
+    border-radius: 10px;
+    box-shadow: 2px 2px black;
+}
+
+.control {
+  display: block;
+  margin: 5px;
+  text-align: center;
+}
+
+.table{
+  background: #2E692E;
+  padding: 0 4em;
+  border: 4px solid black;
+}
+.hand{
+  height: 180px;
+  border: 2px solid #CCA37A;
+}
+.console{
+  display: flex;
+}
+.console *{
+  display: inline-block;
+}
+.bet *{
+  display: block;
+  width: 40px;
+}
+.textOut{
+  text-align: center;
+  display: block;
+  font-size: 50px;
+}
+.pot{
+  text-align: center;
+  display: block;
+  font-size: 50px;
+  margin: 10px 0;
+}
+
+.deck, .hold{
+  height: 100px;
+  width: 100px;
+  border: blue solid;
+  border-radius: 50%;
+  display: inline-block;
+  margin: 0 20px;
+  padding: 33px 0px;
+  text-align: center;
+  box-shadow: 3px 3px 5px 6px #006d3c;
+}
+.deck:active, .hold:active{
+  box-shadow: none;
+}
+.deck{
+  background: black;
+  border: red dashed 8px;
+  color: white;
+}
+.hold{
+  color: white;
+  background: red;
+  border: black dashed 8px;
+}
+
+.bet{
+  display: inline-block;
+  width: 50px;
+  margin: 0 10px;
+}
+button {
+  display: block;
+  margin: 5px;
+}
+.card{
+  display: inline-block;
+  background: #fff;
+  border: black solid 1px;
+  height: 100px;
+  width: 75px;
+  padding: 10px 0 0 10px;
+}
+.card *{
+  font-size: 35px;
+
+}
+.red{
+  color: red;
+}
+.hide{
+  color: white;
+}

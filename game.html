@@ -3,9 +3,7 @@
   <head>
     <title>Welcome to TK Blackjack</title>
     <meta charset="utf-8">
-    <link rel="stylesheet" href="css/styles.css">
-    <script src="https://code.jquery.com/jquery-2.1.4.js"></script>
-    <script src="js/blackjack.js"></script>
+    <link rel="stylesheet" href="css/style.css">
   </head>
 
   <body>
@@ -17,7 +15,7 @@
 
     <div class="nav">
         <a id="goHome" href="index.html">HOME</a>
-        <!-- <a id="goRule" href="rule.html">RULE</a> -->
+        <a id="goRule" href="rule.html">RULE</a>
         <a id="goGame" href="game.html">GAME</a>
     </div>
 
@@ -25,48 +23,62 @@
 
     <h1 class="game">*GAME*</h1>
       <p id="game_greeting"> "Hi! Let's play Blackjack"</p>
-      <!-- <img src="pix/dealer.png" alt="dealer" id="dealer"> -->
+      <img src="pix/dealer.png" alt="dealer" id="dealer">
 
-        <table id="playTable">
-            <tr>
-              <td id="dealerTable" colspan="5">Dealer</td>
-              <td id="dealerSum"><input type="text" id="dealerTotal" value="0"></td>
-            </tr>
-            <tr class="dCard">
-              <td id="dCard1"><img id=blank src="pix/cards/cardback.png"></td>
-              <td id="dCard2"><img id=blank src="pix/cards/cardback.png"></td>
-              <td id="dCard3"><img id=blank src="pix/cards/cardback.png"></td>
-              <td id="dCard4"><img id=blank src="pix/cards/cardback.png"></td>
-              <td id="dCard5"><img id=blank src="pix/cards/cardback.png"></td>
-            </tr>
+      <main>
+      <div class="table">
+        <div class="dealer">
+          <h3>Dealer Hand</h3>
+          <div class="hand">
 
-            <tr class="pCard">
-              <td id="pCard1"><img id=blank src="pix/cards/cardback.png"></td>
-              <td id="pCard2"><img id=blank src="pix/cards/cardback.png"></td>
-              <td id="pCard3"><img id=blank src="pix/cards/cardback.png"></td>
-              <td id="pCard4"><img id=blank src="pix/cards/cardback.png"></td>
-              <td id="pCard5"><img id=blank src="pix/cards/cardback.png"></td>
-            </tr>
-
-            <tr>
-              <td id="playerTable" colspan="5">Player</td>
-              <td id="playerSum"><input type="text" id="playerTotal" value="0"></td>
-            </tr>
-
-        </table>
-
-          <div class=result>Game Result: <input type=text id=gameResult value></div>
-          <div class="control">
-            <button id="start">Deal Me</button>
-            <button id="hit">Hit</button>
-            <button id="stand">Stand</button>
-            <button id="reset">Reset</button>
           </div>
 
+        </div>
+        <div class="console">
+          <div class="deck">
+            Deal
+          </div>
+          <div class="hold">
+            Hold
+          </div>
+          <div class="bet">
+            <button type="button" name="$1">$1</button>
+            <button type="button" name="$5">$5</button>
+            <button type="button" name="$10">$10</button>
+            <button type="button" name="$25">$25</button>
+          </div>
+          <div>
+            <div class="pot">
+              Pot: $<span></span>
+            </div>
+            <div class="textOut"></div>
+          </div>
 
+        </div>
+        <div class="player">
+          <h3>Player Hand</h3>
+          <div class="hand">
 
+          </div>
 
-          <p id="goTop"><a href="#top"> Top of the page </a></p>
-</body>
+        </div>
+        <div class="bank">
+          <p>
+            Bank: $<span></span>
+          </p>
+        </div>
 
+      </div>
+    </main>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="js/blackjack.js"></script>
+    <script src="js/blackjack1.js"></script>
+    <script src="js/blackjack2.js"></script>
+
+  <script>
+    var model = new BlackJack();
+    var game = new BlackJackView(model);
+  </script>
+  </body>
 </html>
