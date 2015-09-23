@@ -186,7 +186,10 @@ button {
 }
 .card *{
   font-size: 35px;
+}
 
+.bank{
+  font-size: 30px;
 }
 .red{
   color: red;
